@@ -1,0 +1,64 @@
+/* Container for the Innovation Hub section */
+.innovation-container {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.innovation-container h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Grid layout for the hackathon cards */
+.hackathon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Each hackathon card */
+.hackathon-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hackathon-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.hackathon-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hackathon-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.hackathon-content h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hackathon-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.hackathon-date {
+    font-size: 14px;
+    color: #999;
+    font-style: italic;
+}

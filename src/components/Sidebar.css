@@ -1,0 +1,105 @@
+/* Sidebar container */
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li:hover {
+    background-color: #444;
+    color: #ddd;
+}
+
+.dropdown-header {
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #444;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-header:hover {
+    background-color: #555;
+}
+
+.dropdown-content {
+    padding-left: 15px;
+    display: block;
+}
+
+.dropdown-content li {
+    padding: 8px 0;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-content li a:hover {
+    text-decoration: underline;
+    color: #ddd;
+}
+
+/* Main content layout next to the sidebar */
+.main-content {
+    margin-left: 200px;  /* Offset by the width of the sidebar */
+    padding: 40px;
+    background-color: #f9f9f9;
+    height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+/* Target the Student Details link specifically and make it bold */
+.sidebar ul li a[href='/student-details'] {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.sidebar ul li a[href='/student-details']:hover {
+    background-color: #444;
+    color: #ddd;
+}
